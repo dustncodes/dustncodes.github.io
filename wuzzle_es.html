@@ -1,12 +1,109 @@
+<!-- Der neue HTML Doctype ist der einfachste Doctype den es je gab.-->
 <!DOCTYPE html>
+<html lang="de">
+<head>
+    <!-- Auch das meta-Tag zum Zeichensatz wurde vereinfacht.-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     
+    <style>
+        * {
+            color: #999999;            
+            box-sizing: border-box;
+            font-family: 'Monteserat', Arial, sans-serif;
+        }
+ 
+ 		header,
+        nav,
+        section,
+        aside,
+        footer {
+            text-align: center;
+            border-radius: 7px;            
+            box-shadow: 0 5px 15px rgba(0,0,0,.08);
+        }
+ 
+        header {
+        	margin: auto;
+            width: 75%;      
+            background-color: #00bdaa;       
 
-<html>
+        }
 
+        header img {
+            max-width: 100%;
+        } 
+ 
+        nav {
+        	font-size: 12px;
+            width: 75%;
+            margin: auto;        
+            display: flex;    
+        }
+
+        .column {
+	  		flex: 20%;
+	  		height: 30px;
+	  		padding: 7px;	  		
+	  		text-align: center;
+		}
+ 
+        aside {
+            width: 25%;
+            float: left;
+            min-height: 517px;
+        }
+ 
+        section {
+        	margin: auto;
+            width: 75%; 
+            margin-top: 50px;
+        }
+
+        article {
+        	text-align: left;
+        	font-size: 12px;            
+        }
+ 
+        section header,
+        section article,
+        section footer {
+            width: 100%;
+            border-radius: 7px;
+            border: 1px solid #e5e5e5;
+            box-shadow: none;
+            margin: 25px 0px 0px 0px;
+            padding: 20px;
+        }
+ 
+        footer {
+            margin: auto;
+            width: 75%;
+            margin-top: 50px;
+            padding: 10px;
+        }
+    </style>
+</head>
 <body>
+<main>
+  <header>
+  	<img src="https://dustncodes.github.io/title.png" alt="Wuzzle">    
 
-    <center>        
+  </header>
+ 
+  <nav> 
+  	<div class="column"><a href="./wuzzle_en.html">About</div>
+    <div class="column"><a href="./wuzzle_support.html">Support</div>
+    <div class="column"><a href="./wuzzle_data_privacy.html">Data Privacy</div>
+    <div class="column"><a href="./wuzzle_imprint.html">Imprint</a></div>
+  </nav>
+ 
+  <section>        
+    <article>
+    	<center>        
         <div>
-            <iframe width="560" height="315" 
+            <iframe 
         src="https://www.youtube.com/embed/xav9mjLk_R8" title="YouTube video 
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
@@ -14,11 +111,21 @@
         <div>
             <a 
         href='https://play.google.com/store/apps/details?id=app.wuzzle&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img 
-        alt='Get it on Google Play' height=120px 
+        alt='Get it on Google Play' height=60px 
         src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>    
         </div>
     </center>
+    </article> <!-- Der Inhalt des Website-Abschnitts -->
+    <!-- Der Schlussteil des Website-Abschnitts <footer></footer> -->
+  </section>
+ 
 
+  <!-- Seite <aside></aside> -->
+  
+ 
+  <footer>  	
+    © 2022 Dustin Eversmann
+  </footer>
+</main>   
 </body>
-
 </html>
