@@ -1,0 +1,126 @@
+<!-- Der neue HTML Doctype ist der einfachste Doctype den es je gab.-->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <!-- Auch das meta-Tag zum Zeichensatz wurde vereinfacht.-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     
+    <style>
+        * {
+            color: #999999;            
+            box-sizing: border-box;
+            font-family: 'Monteserat', Arial, sans-serif;
+        }
+ 
+ 		header,
+        nav,
+        section,
+        aside,
+        footer {
+            text-align: center;
+            border-radius: 7px;            
+            box-shadow: 0 5px 15px rgba(0,0,0,.08);
+        }
+ 
+        header {
+        	margin: auto;
+            width: 75%;      
+            background-color: #00bdaa;       
+
+        }
+
+        header img {
+            max-width: 100%;
+        } 
+ 
+        nav {
+        	font-size: 12px;
+            width: 75%;
+            margin: auto;        
+            display: flex;    
+        }
+
+        .column {
+	  		flex: 20%;
+	  		height: 30px;
+	  		padding: 7px;	  		
+	  		text-align: center;
+		}
+ 
+        aside {
+            width: 25%;
+            float: left;
+            min-height: 517px;
+        }
+ 
+        section {
+        	margin: auto;
+            width: 75%; 
+            margin-top: 50px;
+        }
+
+        article {
+        	text-align: left;
+        	font-size: 12px;            
+        }
+ 
+        section header,
+        section article,
+        section footer {
+            width: 100%;
+            border-radius: 7px;
+            border: 1px solid #e5e5e5;
+            box-shadow: none;
+            margin: 25px 0px 0px 0px;
+            padding: 20px;
+        }
+ 
+        footer {
+            margin: auto;
+            width: 75%;
+            margin-top: 50px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<main>
+  <header>
+  	<img src="https://dustncodes.github.io/title.png" alt="Wuzzle">    
+
+  </header>
+ 
+  <nav> 
+  	<div class="column"><a href="./wuzzle_en.html">About</div>
+    <div class="column"><a href="./wuzzle_support.html">Support</div>
+    <div class="column"><a href="./wuzzle_data_privacy.html">Data Privacy</div>
+    <div class="column"><a href="./wuzzle_imprint.html">Imprint</a></div>
+  </nav>
+ 
+  <section>        
+    <article>
+    	<center><h2>Imprint</h2></center>    
+    	<br>
+        <h3>Information in accordance with section 5 TMG:</h3>
+    	Dustin Eversmann<br>
+        Theisenort 10H<br>
+        96231 Bad Staffelstein<br>
+        Germany<p>
+
+        E-Mail: app.wuzzle@gmail.com
+    </article> <!-- Der Inhalt des Website-Abschnitts -->
+    <!-- Der Schlussteil des Website-Abschnitts <footer></footer> -->
+  </section>
+ 
+
+  <!-- Seite <aside></aside> -->
+  
+ 
+  <footer>  	
+    © 2022 Dustin Eversmann
+  </footer>
+</main>   
+</body>
+</html>
