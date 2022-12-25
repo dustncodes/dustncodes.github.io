@@ -6,119 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     
-    <style>
-        * {
-            color: #999999;            
-            box-sizing: border-box;
-            font-family: 'Monteserat', Arial, sans-serif;
-        }
- 
-        header,
-        nav,
-        section,
-        aside {
-            text-align: center;
-            border-radius: 7px;            
-            box-shadow: 0 5px 15px rgba(0,0,0,.08);
-        }
- 
-        header {
-            margin: auto;
-            width: 40%;      
-            background-color: #00bdaa;       
 
-        }
-
-        header img {
-            max-width: 100%;
-        } 
- 
-        nav {
-            font-size: 12px;
-            width: 40%;
-            margin: auto;        
-            display: flex;    
-        }
-
-        .column {
-            flex: 20%;
-            height: 30px;
-            padding: 7px;           
-            text-align: center;
-        }
- 
-        aside {
-            width: 25%;
-            float: left;
-            min-height: 517px;
-        }
- 
-        section {
-            margin: auto;
-            width: 50%; 
-            margin-top: 50px;
-        }
-
-        article {
-            text-align: left;
-            font-size: 12px;            
-        }
- 
-        section header,
-        section article,
-        section footer {
-            width: 100%;
-            border-radius: 7px;
-            border: 1px solid #e5e5e5;
-            box-shadow: none;
-            margin: 25px 0px 0px 0px;
-            padding: 20px;
-        }
- 
-        footer {
-            margin: auto;
-            width: 50%;
-            margin-top: 50px;
-            padding: 10px;
-            text-align: center;
-        }
-
-        iframe {
-            width: 100%;     
-            aspect-ratio: 16/9;       
-        }
-
-        @media (max-width: 1200px) {
-            header {                
-                width: 50%;                     
-            }
-            nav {           
-                width: 50%;             
-            }
-            section {           
-                width: 75%;             
-            }
-            footer {            
-                width: 75%;            
-            }
-        }
-
-        @media (max-width: 800px) {
-            header {                
-                width: 90%;                     
-            }
-            nav {           
-                width: 90%;             
-            }
-            section {           
-                width: 90%;             
-            }
-            footer {            
-                width: 90%;            
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">        
 </head>
 <body>
 <main>
@@ -130,8 +19,7 @@
   <nav> 
   	<div class="column"><a href="./wuzzle_en.html">About</div>
     <div class="column"><a href="./wuzzle_support.html">Support</div>
-    <div class="column"><a href="./wuzzle_data_privacy.html">Data Privacy</div>
-    <div class="column"><a href="./wuzzle_imprint.html">Imprint</a></div>
+    <div class="column"><a href="./wuzzle_data_privacy.html">Data Privacy</div>    
   </nav>
  
   <section>        
@@ -142,13 +30,13 @@
         src="https://www.youtube.com/embed/exHjCJPKLmI" title="YouTube video 
         player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
-        </div>
-        <div>
-            <a 
-        href='https://play.google.com/store/apps/details?id=app.wuzzle&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img 
+        </div>    
+        <div class="links">
+            <a href='https://play.google.com/store/apps/details?id=app.wuzzle&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img 
         alt='Get it on Google Play' height=60px 
-        src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>    
-        </div>
+        src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>                
+            <a href="https://apps.apple.com/us/app/wuzzle-word-lanes-word-jam/id1660307373?itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-radius: 13px; height: 42px; margin-bottom: 4px"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1331251200?h=e787b40f0e3dbf9e419a649418a3e23a" alt="Download on the App Store" style="border-radius: 13px; height: 42px;"></a>            
+        </div>            
     </center>
     </article> <!-- Der Inhalt des Website-Abschnitts -->
     <!-- Der Schlussteil des Website-Abschnitts <footer></footer> -->
@@ -159,7 +47,9 @@
   
  
   <footer>  	
-    © 2022 Dustin Eversmann
+    <div class="column"><a href="./wuzzle_imprint.html">Imprint</a></div>
+    <br>
+    © 2022 Dustin Eversmann    
   </footer>
 </main>   
 </body>
