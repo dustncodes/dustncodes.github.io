@@ -6,132 +6,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     
-    <style>
-        * {
-            color: #999999;            
-            box-sizing: border-box;
-            font-family: 'Monteserat', Arial, sans-serif;
-        }
- 
-        header,
-        nav,
-        section,
-        aside {
-            text-align: center;
-            border-radius: 7px;            
-            box-shadow: 0 5px 15px rgba(0,0,0,.08);
-        }
- 
-        header {
-            margin: auto;
-            width: 40%;      
-            background-color: #00bdaa;       
 
-        }
-
-        header img {
-            max-width: 100%;
-        } 
- 
-        nav {
-            font-size: 12px;
-            width: 40%;
-            margin: auto;        
-            display: flex;    
-        }
-
-        .column {
-            flex: 20%;
-            height: 30px;
-            padding: 7px;           
-            text-align: center;
-        }
- 
-        aside {
-            width: 25%;
-            float: left;
-            min-height: 517px;
-        }
- 
-        section {
-            margin: auto;
-            width: 50%; 
-            margin-top: 50px;
-        }
-
-        article {
-            text-align: left;
-            font-size: 12px;            
-        }
- 
-        section header,
-        section article,
-        section footer {
-            width: 100%;
-            border-radius: 7px;
-            border: 1px solid #e5e5e5;
-            box-shadow: none;
-            margin: 25px 0px 0px 0px;
-            padding: 20px;
-        }
- 
-        footer {
-            margin: auto;
-            width: 50%;
-            margin-top: 50px;
-            padding: 10px;
-            text-align: center;
-        }
-
-        iframe {
-            width: 100%;     
-            aspect-ratio: 16/9;       
-        }
-
-        @media (max-width: 1200px) {
-            header {                
-                width: 50%;                     
-            }
-            nav {           
-                width: 50%;             
-            }
-            section {           
-                width: 75%;             
-            }
-            footer {            
-                width: 75%;            
-            }
-        }
-
-        @media (max-width: 800px) {
-            header {                
-                width: 90%;                     
-            }
-            nav {           
-                width: 90%;             
-            }
-            section {           
-                width: 90%;             
-            }
-            footer {            
-                width: 90%;            
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">        
 </head>
 <body>
 <main>
   <header>
   	<img src="https://dustncodes.github.io/title.png" alt="Wuzzle">    
-
   </header>
  
   <nav> 
   	<div class="column"><a href="./wuzzle_en.html">About</div>
     <div class="column"><a href="./wuzzle_support.html">Support</div>
-    <div class="column"><a href="./wuzzle_data_privacy.html">Data Privacy</div>
-    <div class="column"><a href="./wuzzle_imprint.html">Imprint</a></div>
+    <div class="column"><a href="./wuzzle_data_privacy.html">Data Privacy</div>    
   </nav>
  
   <section>        
@@ -154,7 +41,9 @@
   
  
   <footer>  	
-    © 2022 Dustin Eversmann
+    <div class="column"><a href="./wuzzle_imprint.html">Imprint</a></div>
+    <br>
+    © 2022 Dustin Eversmann    
   </footer>
 </main>   
 </body>
