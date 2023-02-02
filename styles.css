@@ -24,6 +24,19 @@
         header img {
             max-width: 100%;
         } 
+
+        h1 {
+            font-size: 16px;
+            color: #00bdaa;
+        }
+
+        h2 {
+            font-size: 14px;               
+        }
+
+        p {
+            text-align: justify;
+        }
  
         nav {
             font-size: 12px;
