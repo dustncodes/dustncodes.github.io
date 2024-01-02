@@ -9,6 +9,10 @@
     font-weight: bold;
 }
 
+:root {
+  color-scheme: only light;
+}
+
 html {
     font-family: Quicksand-Regular;    
     background-color: white;
