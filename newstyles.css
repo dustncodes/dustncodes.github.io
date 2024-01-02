@@ -89,7 +89,15 @@ footer div {
 }
 
 @media (max-width: 1200px) {
+    .logo {
+        margin-top: 10vh;
+    }
+
     .logo img {
         width: 200px;
+    }
+
+    .title {
+        font-size: x-large;
     }
 }
