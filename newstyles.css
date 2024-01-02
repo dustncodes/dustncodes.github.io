@@ -11,6 +11,7 @@
 
 html {
     font-family: Quicksand-Regular;    
+    background-color: white;
 }
 
 body {    
@@ -85,4 +86,10 @@ footer div {
 .right {
     width: 80px;    
     float: right;
+}
+
+@media (max-width: 1200px) {
+    .logo img {
+        width: 200px;
+    }
 }
